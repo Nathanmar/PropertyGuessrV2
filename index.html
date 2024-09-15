@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriétés sur la Carte</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Propriétés sur la Carte</h1>
+    </header>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Initialisation de la carte centrée sur la France 
+        const map = L.map('map', {
+            center: [46.603354, 1.888334], // Coordonnées pour centrer sur la France
+            zoom: 6, // Niveau de zoom initial
+            minZoom: 6, // Zoom minimum pour ne pas pouvoir zoomer trop loin
+            maxZoom: 16 // Zoom maximum pour éviter le zoom avant excessif
+        });
+
+        // Limites de la carte à la France
+        const southWest = L.latLng(41.0, -5.0);  // Coordonnées Sud-Ouest de la France
+        const northEast = L.latLng(51.5, 9.0);   // Coordonnées Nord-Est de la France
+        const bounds = L.latLngBounds(southWest, northEast);
+
+        // Appliquer les limites pour restreindre la vue uniquement à la France
+        map.setMaxBounds(bounds);  // Restreindre la vue
+        map.on('drag', function() {
+            map.panInsideBounds(bounds, { animate: false }); // Empêcher de sortir des limites
+        });
+
+        // Charger les tuiles OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Fonction pour ajouter les marqueurs à partir des données de la base de données via PHP
+        async function addMarkers() {
+            try {
+                // Charger les propriétés depuis la base de données avec PHP
+                const response = await fetch('php/fetchfromjson.php');
+                if (!response.ok) {
+                    throw new Error(`Erreur de chargement des données: ${response.statusText}`);
+                }
+                const properties = await response.json();
+
+                console.log(properties);
+
+                // Ajouter un marqueur pour chaque propriété
+                properties.forEach(property => {
+                    const latitude = property.latitude;
+                    const longitude = property.longitude;
+                    const propertyType = property.propertyType || "Propriété";
+                    const city = property.city || "Unknown City";
+                    const postalCode = property.postalCode || "Unknown Postal Code";
+                    const propertyUrl = property.propertyPricesUrl || "#";
+
+                    if (latitude && longitude) {
+                        const marker = L.marker([latitude, longitude]).addTo(map);
+
+                        marker.bindPopup(`
+                            <b>${propertyType}</b><br>
+                            ${city}, ${postalCode}<br>
+                            <a href="php/details.php?id=${property.id}">Voir l'annonce</a>
+                        `);
+                    }
+                });
+            } catch (error) {
+                console.error("Erreur lors de l'ajout des marqueurs :", error);
+            }
+        }
+
+        addMarkers();
+    </script>
+</body>
+</html>

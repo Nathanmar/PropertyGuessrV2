@@ -1,0 +1,736 @@
+[
+    {
+      "listing": {
+        "listingDetail": {
+          "id": 209153897,
+          "transactionTypeId": 2,
+          "transactionType": "vente",
+          "propertyTypeId": 2,
+          "propertyType": "Maison / Villa",
+          "propertySubTypeId": null,
+          "propertySubType": null,
+          "propertyNatureId": 1,
+          "publicationTypeIdSl": 0,
+          "publicationTypeId": 1,
+          "publicationId": 1051452,
+          "address": {
+            "city": "Boulazac",
+            "superCity": null,
+            "postalCode": "24750",
+            "street": null,
+            "district": "Nord",
+            "countryId": 250,
+            "divisionId": 2229
+          },
+          "reference": "209153897",
+          "descriptive": "Idéalement située (petits commerces et supermarché de proximité, centre-ville de Périgueux et zone commerciale Est à 10 minutes à vélo, écoles, espaces de loisirs, fiscalité et nombreux services boulazacois),\nD'une superficie totale de 180 m² plus un ½ sous-sol de 60 m²,\nLumineuse et rénovée dans un style contemporain et naturel,\nCette belle maison est implantée sur un terrain de 884 m².\n\nLa maison comprend :\nDe plain-pied :\n  une entrée, séjour-cuisine de 47 m² donnant sur un patio (sud) et une grande terrasse (nord)\n  un salon séparé de 20 m² avec bibliothèque\n  une salle d'eau avec WC de 6.5 m²\n  une chambre de 13.50 m²\n½ étage (3 marches) :\n\t3 chambres de 15 m², 15 m² et 18 m²  avec grands placards\n\tun dressing\n\tune grande salle de bain avec douche italienne, baignoire, 2 vasques, espace buanderie\n\tun WC\nSous-sol :\n\tun cellier aménagé de 17 m²\n\tune cave de 21 m²\n\tun atelier de 30 m²\nTerrain : \n  une cour avec espace parking à l'avant\n  un jardin arboré facile à entretenir avec très peu de vis-à-vis à l'arrière\n\nConstruction de qualité avec puits, pompe à chaleur, isolation de 14 cm, menuiseries aluminium avec volets roulants, plan de travail en granit, parquets en chêne, beaux placards, barrière galvanisée … (aménagements extérieurs à terminer, terrain piscinable)\n\nBien rare à découvrir\n",
+          "roomCount": 6,
+          "bedroomCount": 4,
+          "surface": 180,
+          "surfaceUnit": "m²",
+          "isExclusiveSalesMandate": false,
+          "isRentChargesIncluded": null,
+          "listingPrice": {
+            "price": 398000,
+            "priceInformation": null,
+            "priceUnit": "€",
+            "lifeAnnuityPrice": null,
+            "pricePerSquareMeter": 2211,
+            "priceRange": null,
+            "hasPriceRange": false,
+            "priceEvolutionTrend": null,
+            "monthlyPayment": 2216,
+            "alur": {
+              "siHonoraireChargeVendeur": false,
+              "siHonoraireChargeAcquereur": false,
+              "pourcentagesHonoraires": 0,
+              "prixHorsHonoraires": 0,
+              "tranchePrixHorsHonoraire": null,
+              "idTypeResponsableHonoraires": null,
+              "idTypeChargesLocationHonoraires": null,
+              "complementLoyer": 0,
+              "chargesForfaitaire": 0,
+              "honorairesLocataire": 0,
+              "honorairesEtatsDesLieux": 0,
+              "garantieLocation": 0,
+              "siProvisionsSurCharges": false,
+              "siForfaitaire": false,
+              "siRemboursementAnnuel": false,
+              "loyerReferenceMajore": null
+            },
+            "propertyPricesUrl": "https://www.seloger.com/prix-de-l-immo/vente/aquitaine/dordogne/boulazac/nord/40376.htm",
+            "averagePricePerSquareMeter": 1858,
+            "minPricePerSquareMeter": 1393,
+            "maxPricePerSquareMeter": 2787
+          },
+          "priceEvolutions": null,
+          "coOwnership": null,
+          "energyPerformanceCertificate": {
+            "electricityConsumption": 68,
+            "energyFinalConsumption": null,
+            "electricityRating": " ",
+            "electricityDiagnosisDate": null,
+            "electricityEstimateCostMin": null,
+            "electricityEstimateCostMax": null,
+            "gasEmission": 2,
+            "gasRating": " ",
+            "status": 0,
+            "version": 2
+          },
+          "coordinates": {
+            "latitude": 45.185783999999934,
+            "longitude": 0.7423409999999994,
+            "polygon": null,
+            "street": "RUE BRANLY 24750 BOULAZAC ISLE MANOIRE",
+            "polygonTypeId": null
+          },
+          "media": {
+            "photos": [
+              {
+                "id": 1602543075,
+                "isHorizontal": true,
+                "descriptiveFr": null,
+                "defaultUrl": "https://v.seloger.com/s/width/800/visuels/0/j/v/l/0jvlrpoxadxwhg51kfayidwva02jg7wpqffw814m8.jpg",
+                "squareUrl": "https://v.seloger.com/s/crop/200x200/visuels/0/j/v/l/0jvlrpoxadxwhg51kfayidwva02jg7wpqffw814m8.jpg",
+                "squareLargeUrl": "https://v.seloger.com/s/crop/414x414/visuels/0/j/v/l/0jvlrpoxadxwhg51kfayidwva02jg7wpqffw814m8.jpg",
+                "mobileUrl": "https://v.seloger.com/s/width/600/visuels/0/j/v/l/0jvlrpoxadxwhg51kfayidwva02jg7wpqffw814m8.jpg",
+                "originalUrl": "https://v.seloger.com/s/cdn/x/visuels/0/j/v/l/0jvlrpoxadxwhg51kfayidwva02jg7wpqffw814m8.jpg",
+                "photoDescriptionTags": null,
+                "lowResolutionUrl": "https://v.seloger.com/s/width/400/visuels/0/j/v/l/0jvlrpoxadxwhg51kfayidwva02jg7wpqffw814m8.jpg"
+              },
+              {
+                "id": 1602543077,
+                "isHorizontal": true,
+                "descriptiveFr": null,
+                "defaultUrl": "https://v.seloger.com/s/width/800/visuels/2/0/e/0/20e0ihztx1du57xt9wmybscf6qyb04gm4o2x8gh1z.jpg",
+                "squareUrl": "https://v.seloger.com/s/crop/200x200/visuels/2/0/e/0/20e0ihztx1du57xt9wmybscf6qyb04gm4o2x8gh1z.jpg",
+                "squareLargeUrl": "https://v.seloger.com/s/crop/414x414/visuels/2/0/e/0/20e0ihztx1du57xt9wmybscf6qyb04gm4o2x8gh1z.jpg",
+                "mobileUrl": "https://v.seloger.com/s/width/600/visuels/2/0/e/0/20e0ihztx1du57xt9wmybscf6qyb04gm4o2x8gh1z.jpg",
+                "originalUrl": "https://v.seloger.com/s/cdn/x/visuels/2/0/e/0/20e0ihztx1du57xt9wmybscf6qyb04gm4o2x8gh1z.jpg",
+                "photoDescriptionTags": null,
+                "lowResolutionUrl": "https://v.seloger.com/s/width/400/visuels/2/0/e/0/20e0ihztx1du57xt9wmybscf6qyb04gm4o2x8gh1z.jpg"
+              },
+              {
+                "id": 1602543079,
+                "isHorizontal": true,
+                "descriptiveFr": null,
+                "defaultUrl": "https://v.seloger.com/s/width/800/visuels/0/3/e/g/03egs1esoiqexyv6uyip0t9ka74aq5lyeynz4xx7b.jpg",
+                "squareUrl": "https://v.seloger.com/s/crop/200x200/visuels/0/3/e/g/03egs1esoiqexyv6uyip0t9ka74aq5lyeynz4xx7b.jpg",
+                "squareLargeUrl": "https://v.seloger.com/s/crop/414x414/visuels/0/3/e/g/03egs1esoiqexyv6uyip0t9ka74aq5lyeynz4xx7b.jpg",
+                "mobileUrl": "https://v.seloger.com/s/width/600/visuels/0/3/e/g/03egs1esoiqexyv6uyip0t9ka74aq5lyeynz4xx7b.jpg",
+                "originalUrl": "https://v.seloger.com/s/cdn/x/visuels/0/3/e/g/03egs1esoiqexyv6uyip0t9ka74aq5lyeynz4xx7b.jpg",
+                "photoDescriptionTags": null,
+                "lowResolutionUrl": "https://v.seloger.com/s/width/400/visuels/0/3/e/g/03egs1esoiqexyv6uyip0t9ka74aq5lyeynz4xx7b.jpg"
+              },
+              {
+                "id": 1602543081,
+                "isHorizontal": true,
+                "descriptiveFr": null,
+                "defaultUrl": "https://v.seloger.com/s/width/800/visuels/1/i/d/0/1id0gi5inx39mlvvj2fp9s6iuv4aeuaodygxk85lj.jpg",
+                "squareUrl": "https://v.seloger.com/s/crop/200x200/visuels/1/i/d/0/1id0gi5inx39mlvvj2fp9s6iuv4aeuaodygxk85lj.jpg",
+                "squareLargeUrl": "https://v.seloger.com/s/crop/414x414/visuels/1/i/d/0/1id0gi5inx39mlvvj2fp9s6iuv4aeuaodygxk85lj.jpg",
+                "mobileUrl": "https://v.seloger.com/s/width/600/visuels/1/i/d/0/1id0gi5inx39mlvvj2fp9s6iuv4aeuaodygxk85lj.jpg",
+                "originalUrl": "https://v.seloger.com/s/cdn/x/visuels/1/i/d/0/1id0gi5inx39mlvvj2fp9s6iuv4aeuaodygxk85lj.jpg",
+                "photoDescriptionTags": null,
+                "lowResolutionUrl": "https://v.seloger.com/s/width/400/visuels/1/i/d/0/1id0gi5inx39mlvvj2fp9s6iuv4aeuaodygxk85lj.jpg"
+              },
+              {
+                "id": 1602543083,
+                "isHorizontal": true,
+                "descriptiveFr": null,
+                "defaultUrl": "https://v.seloger.com/s/width/800/visuels/1/6/j/p/16jplpr5xjkbuanppsvrn7xtgxhljri85ihy0yo2f.jpg",
+                "squareUrl": "https://v.seloger.com/s/crop/200x200/visuels/1/6/j/p/16jplpr5xjkbuanppsvrn7xtgxhljri85ihy0yo2f.jpg",
+                "squareLargeUrl": "https://v.seloger.com/s/crop/414x414/visuels/1/6/j/p/16jplpr5xjkbuanppsvrn7xtgxhljri85ihy0yo2f.jpg",
+                "mobileUrl": "https://v.seloger.com/s/width/600/visuels/1/6/j/p/16jplpr5xjkbuanppsvrn7xtgxhljri85ihy0yo2f.jpg",
+                "originalUrl": "https://v.seloger.com/s/cdn/x/visuels/1/6/j/p/16jplpr5xjkbuanppsvrn7xtgxhljri85ihy0yo2f.jpg",
+                "photoDescriptionTags": null,
+                "lowResolutionUrl": "https://v.seloger.com/s/width/400/visuels/1/6/j/p/16jplpr5xjkbuanppsvrn7xtgxhljri85ihy0yo2f.jpg"
+              },
+              {
+                "id": 1602543085,
+                "isHorizontal": true,
+                "descriptiveFr": null,
+                "defaultUrl": "https://v.seloger.com/s/width/800/visuels/1/r/m/q/1rmq45xaj62inlmbx8c6bzdh5h4uu2ek5ar138v2v.jpg",
+                "squareUrl": "https://v.seloger.com/s/crop/200x200/visuels/1/r/m/q/1rmq45xaj62inlmbx8c6bzdh5h4uu2ek5ar138v2v.jpg",
+                "squareLargeUrl": "https://v.seloger.com/s/crop/414x414/visuels/1/r/m/q/1rmq45xaj62inlmbx8c6bzdh5h4uu2ek5ar138v2v.jpg",
+                "mobileUrl": "https://v.seloger.com/s/width/600/visuels/1/r/m/q/1rmq45xaj62inlmbx8c6bzdh5h4uu2ek5ar138v2v.jpg",
+                "originalUrl": "https://v.seloger.com/s/cdn/x/visuels/1/r/m/q/1rmq45xaj62inlmbx8c6bzdh5h4uu2ek5ar138v2v.jpg",
+                "photoDescriptionTags": null,
+                "lowResolutionUrl": "https://v.seloger.com/s/width/400/visuels/1/r/m/q/1rmq45xaj62inlmbx8c6bzdh5h4uu2ek5ar138v2v.jpg"
+              },
+              {
+                "id": 1602543087,
+                "isHorizontal": true,
+                "descriptiveFr": null,
+                "defaultUrl": "https://v.seloger.com/s/width/800/visuels/0/q/y/t/0qythphyd159g4sdiim7dz7vnj9xak68igt1u2e6v.jpg",
+                "squareUrl": "https://v.seloger.com/s/crop/200x200/visuels/0/q/y/t/0qythphyd159g4sdiim7dz7vnj9xak68igt1u2e6v.jpg",
+                "squareLargeUrl": "https://v.seloger.com/s/crop/414x414/visuels/0/q/y/t/0qythphyd159g4sdiim7dz7vnj9xak68igt1u2e6v.jpg",
+                "mobileUrl": "https://v.seloger.com/s/width/600/visuels/0/q/y/t/0qythphyd159g4sdiim7dz7vnj9xak68igt1u2e6v.jpg",
+                "originalUrl": "https://v.seloger.com/s/cdn/x/visuels/0/q/y/t/0qythphyd159g4sdiim7dz7vnj9xak68igt1u2e6v.jpg",
+                "photoDescriptionTags": null,
+                "lowResolutionUrl": "https://v.seloger.com/s/width/400/visuels/0/q/y/t/0qythphyd159g4sdiim7dz7vnj9xak68igt1u2e6v.jpg"
+              },
+              {
+                "id": 1602543089,
+                "isHorizontal": true,
+                "descriptiveFr": null,
+                "defaultUrl": "https://v.seloger.com/s/width/800/visuels/0/0/a/n/00anj8707ztvxtt76uszv0svwg4svzeiipwi0bkps.jpg",
+                "squareUrl": "https://v.seloger.com/s/crop/200x200/visuels/0/0/a/n/00anj8707ztvxtt76uszv0svwg4svzeiipwi0bkps.jpg",
+                "squareLargeUrl": "https://v.seloger.com/s/crop/414x414/visuels/0/0/a/n/00anj8707ztvxtt76uszv0svwg4svzeiipwi0bkps.jpg",
+                "mobileUrl": "https://v.seloger.com/s/width/600/visuels/0/0/a/n/00anj8707ztvxtt76uszv0svwg4svzeiipwi0bkps.jpg",
+                "originalUrl": "https://v.seloger.com/s/cdn/x/visuels/0/0/a/n/00anj8707ztvxtt76uszv0svwg4svzeiipwi0bkps.jpg",
+                "photoDescriptionTags": null,
+                "lowResolutionUrl": "https://v.seloger.com/s/width/400/visuels/0/0/a/n/00anj8707ztvxtt76uszv0svwg4svzeiipwi0bkps.jpg"
+              }
+            ],
+            "totalPhotoCount": 8,
+            "videoUrl": null,
+            "visit3DUrl": null
+          },
+          "businessUnitType": "SL",
+          "seoLinkBox": {
+            "commodityList": []
+          },
+          "seoTitle": "Vente maison 6 pièces Boulazac - maison F6/T6/6 pièces 180 m² 398000€",
+          "title": "Vente maison 6 pièces Boulazac - maison F6/T6/6 pièces 180 m² 398000€",
+          "mainTitle": "Maison à vendre",
+          "featuresPopupTitle": "maison",
+          "shortDescription": "Idéalement située (petits commerces et supermarché de proximité, centre-ville de Périgueux et zone commerciale Est à 10 minutes à vélo, écoles, espaces de loisirs, fiscalité et nombreux services boulazacois),\nD'une superficie totale de 180 m² plus un",
+          "featureCategories": {
+            "header": {
+              "title": null,
+              "features": [
+                {
+                  "name": "room",
+                  "title": "6 pièces",
+                  "visibleInMainView": false
+                },
+                {
+                  "name": "bedroom",
+                  "title": "4 chambres",
+                  "visibleInMainView": false
+                },
+                {
+                  "name": "livingspace",
+                  "title": "180 m²",
+                  "visibleInMainView": false
+                },
+                {
+                  "name": "overallspace",
+                  "title": "Terrain 884 m²",
+                  "visibleInMainView": false
+                }
+              ]
+            },
+            "general": null,
+            "outside": {
+              "title": "Extérieur",
+              "features": [
+                {
+                  "name": "terrace",
+                  "title": "2 terrasses",
+                  "visibleInMainView": true
+                },
+                {
+                  "name": "garden",
+                  "title": "Jardin",
+                  "visibleInMainView": true
+                }
+              ]
+            },
+            "situation": null,
+            "additionalSurface": {
+              "title": "Surfaces annexes",
+              "features": [
+                {
+                  "name": "cellar",
+                  "title": "Cave",
+                  "visibleInMainView": true
+                }
+              ]
+            },
+            "serviceAndAccessibility": null,
+            "kitchen": null,
+            "hygiene": {
+              "title": "Hygiène",
+              "features": [
+                {
+                  "name": "bathroom",
+                  "title": "Salle de bain (baignoire)",
+                  "visibleInMainView": false
+                },
+                {
+                  "name": "shower",
+                  "title": "Salle d'eau (douche)",
+                  "visibleInMainView": false
+                }
+              ]
+            },
+            "livingSpace": {
+              "title": "Pièces à vivre",
+              "features": [
+                {
+                  "name": "entrance",
+                  "title": "Entrée séparée",
+                  "visibleInMainView": false
+                }
+              ]
+            },
+            "heating": {
+              "title": "Chauffage",
+              "features": [
+                {
+                  "name": "heatingtype",
+                  "title": "Chauffage : non communiqué",
+                  "visibleInMainView": false
+                }
+              ]
+            }
+          },
+          "yearOfConstruction": null,
+          "transport": null
+        },
+        "listingBreadcrumb": {
+          "breadcrumb": [
+            {
+              "label": "Immobilier",
+              "link": "https://www.seloger.com"
+            },
+            {
+              "label": "Annonces",
+              "link": "https://www.seloger.com/immobilier/"
+            },
+            {
+              "label": "Achat entre particuliers maison Aquitaine",
+              "link": "https://www.seloger.com/immobilier/achat/particulier/bien-maison/aquitaine.htm"
+            },
+            {
+              "label": "Achat entre particuliers maison Dordogne",
+              "link": "https://www.seloger.com/immobilier/achat/particulier/24/bien-maison/"
+            },
+            {
+              "label": "Achat entre particuliers maison Nord",
+              "link": "https://www.seloger.com/immobilier/achat/immo-boulazac-24/quartier-nord/bien-maison/"
+            },
+            {
+              "label": "Vente Maison / Villa 6 pièces 180 m² Boulazac - Nord - Rue Branly 24750 Boulazac Isle Manoire",
+              "link": null
+            }
+          ]
+        },
+        "url": {
+          "value": "https://www.seloger.com/annonces/achat/maison/boulazac-24/nord/209153897.htm",
+          "businessUnitType": "SL",
+          "nature": 1
+        },
+        "earlyAccess": null
+      },
+      "agency": {
+        "id": 235420,
+        "idRcu": "RC-999999999",
+        "name": "Manu",
+        "professionType": "Agences immobilières",
+        "address": "",
+        "logo": null,
+        "organisationLogo": null,
+        "description": null,
+        "tierId": -1000,
+        "feesUrl": null,
+        "websiteUrl": null,
+        "profilPageUrl": "/professionnels/agences-immobilieres/paris-18eme-arrondissement-75018/agence-71211/",
+        "phoneNumber": "06 13 11 19 50",
+        "contactHidden": false,
+        "rating": {
+          "rating": null,
+          "reviewCount": 0,
+          "reviewUrl": null
+        },
+        "legalNotice": {
+          "socialReason": null,
+          "shareCapital": 0,
+          "professionalCardNumber": null,
+          "professionalCardPrefecture": null,
+          "financialGuaranteeFund": null,
+          "financialGuaranteeAmount": null,
+          "headquarterAddress": null,
+          "rcsSiren": null,
+          "isIndividual": true,
+          "legalForm": null
+        }
+      }
+    },
+    {
+      "listing": {
+        "listingDetail": {
+          "id": 209163313,
+          "transactionTypeId": 2,
+          "transactionType": "vente",
+          "propertyTypeId": 2,
+          "propertyType": "Maison / Villa",
+          "propertySubTypeId": null,
+          "propertySubType": null,
+          "propertyNatureId": 1,
+          "publicationTypeIdSl": 0,
+          "publicationTypeId": 1,
+          "publicationId": 1051452,
+          "address": {
+            "city": "Bellerive-sur-Allier",
+            "superCity": null,
+            "postalCode": "03700",
+            "street": null,
+            "district": "Centre Ville Bas",
+            "countryId": 250,
+            "divisionId": 2230
+          },
+          "reference": "209163313",
+          "descriptive": "Belle maison début 20e siècle rénovée en 2023 dans un quartier calme, vert et recherché du centre ville de Bellerive sur Allier .\nLa maison est située à proximité de toutes commodités, bus, commerces, piscine, lac d’Allier, écoles et collège. Accès Vichy en 5 minutes à pied. Piste cyclable\n120 m2 habitable sur une parcelle d'environ 600 m2, 6 pièces, Grande hauteur sous plafond  et décoration chaleureuse.\nTrès jolie terrasse en accès de plein pied avec vue sur jardin arboré. Jardin avec points d'eau alimentés par le puit de la maison. jardin électrifié, équipé pour tondeuse robot.\nLa maison est constituée de 3 niveaux.\nElle se compose au rez-de-chaussée d’une entrée avec placard, wc, d'un séjour prolongé d'une cuisine américaine .\nD’un côté on accède au 1er étage  composé de 2 grandes chambres, une belle salle de bains avec baignoire,  wc séparé.\nSous les toits 1 grande chambre de 20m² très lumineuse.\nDe l’autre côté, un grand bureau, une salle de douche+ wc  et une chambre.\nToutes les fenêtres de chambre, salle de bain et bureau sont équipées de volets électrique et moustiquaires\nGrand sous-sol avec cave et chaufferie. Chaudière gaz condensation récente de 2019. VMC\n Grand garage indépendant 2 voitures",
+          "roomCount": 6,
+          "bedroomCount": 4,
+          "surface": 120,
+          "surfaceUnit": "m²",
+          "isExclusiveSalesMandate": false,
+          "isRentChargesIncluded": null,
+          "listingPrice": {
+            "price": 300000,
+            "priceInformation": null,
+            "priceUnit": "€",
+            "lifeAnnuityPrice": null,
+            "pricePerSquareMeter": 2500,
+            "priceRange": null,
+            "hasPriceRange": false,
+            "priceEvolutionTrend": null,
+            "monthlyPayment": 1674,
+            "alur": {
+              "siHonoraireChargeVendeur": false,
+              "siHonoraireChargeAcquereur": false,
+              "pourcentagesHonoraires": 0,
+              "prixHorsHonoraires": 0,
+              "tranchePrixHorsHonoraire": null,
+              "idTypeResponsableHonoraires": null,
+              "idTypeChargesLocationHonoraires": null,
+              "complementLoyer": 0,
+              "chargesForfaitaire": 0,
+              "honorairesLocataire": 0,
+              "honorairesEtatsDesLieux": 0,
+              "garantieLocation": 0,
+              "siProvisionsSurCharges": false,
+              "siForfaitaire": false,
+              "siRemboursementAnnuel": false,
+              "loyerReferenceMajore": null
+            },
+            "propertyPricesUrl": "https://www.seloger.com/prix-de-l-immo/vente/auvergne/allier/bellerive-sur-allier/centre-ville-bas/39023.htm",
+            "averagePricePerSquareMeter": 1923,
+            "minPricePerSquareMeter": 1442,
+            "maxPricePerSquareMeter": 2884
+          },
+          "priceEvolutions": null,
+          "coOwnership": null,
+          "energyPerformanceCertificate": {
+            "electricityConsumption": null,
+            "energyFinalConsumption": 256,
+            "electricityRating": "E",
+            "electricityDiagnosisDate": null,
+            "electricityEstimateCostMin": 1980,
+            "electricityEstimateCostMax": 2730,
+            "gasEmission": 48,
+            "gasRating": "D",
+            "status": 0,
+            "version": 2
+          },
+          "coordinates": {
+            "latitude": 46.11895899999992,
+            "longitude": 3.4048380000000003,
+            "polygon": null,
+            "street": "RUE CHARLOING 03700 BELLERIVE SUR ALLIER",
+            "polygonTypeId": null
+          },
+          "media": {
+            "photos": [
+              {
+                "id": 1802369917,
+                "isHorizontal": true,
+                "descriptiveFr": null,
+                "defaultUrl": "https://v.seloger.com/s/width/800/visuels/0/n/f/k/0nfk6o6l4s875p9lrqu67gfoy9h59rm2ao2c6ybog.jpg",
+                "squareUrl": "https://v.seloger.com/s/crop/200x200/visuels/0/n/f/k/0nfk6o6l4s875p9lrqu67gfoy9h59rm2ao2c6ybog.jpg",
+                "squareLargeUrl": "https://v.seloger.com/s/crop/414x414/visuels/0/n/f/k/0nfk6o6l4s875p9lrqu67gfoy9h59rm2ao2c6ybog.jpg",
+                "mobileUrl": "https://v.seloger.com/s/width/600/visuels/0/n/f/k/0nfk6o6l4s875p9lrqu67gfoy9h59rm2ao2c6ybog.jpg",
+                "originalUrl": "https://v.seloger.com/s/cdn/x/visuels/0/n/f/k/0nfk6o6l4s875p9lrqu67gfoy9h59rm2ao2c6ybog.jpg",
+                "photoDescriptionTags": null,
+                "lowResolutionUrl": "https://v.seloger.com/s/width/400/visuels/0/n/f/k/0nfk6o6l4s875p9lrqu67gfoy9h59rm2ao2c6ybog.jpg"
+              },
+              {
+                "id": 1802369919,
+                "isHorizontal": false,
+                "descriptiveFr": null,
+                "defaultUrl": "https://v.seloger.com/s/height/800/visuels/1/2/4/b/124b0i1gg9zk644pjvrz3z01ud5xrnpib8hiosjzs.jpg",
+                "squareUrl": "https://v.seloger.com/s/crop/200x200/visuels/1/2/4/b/124b0i1gg9zk644pjvrz3z01ud5xrnpib8hiosjzs.jpg",
+                "squareLargeUrl": "https://v.seloger.com/s/crop/414x414/visuels/1/2/4/b/124b0i1gg9zk644pjvrz3z01ud5xrnpib8hiosjzs.jpg",
+                "mobileUrl": "https://v.seloger.com/s/height/600/visuels/1/2/4/b/124b0i1gg9zk644pjvrz3z01ud5xrnpib8hiosjzs.jpg",
+                "originalUrl": "https://v.seloger.com/s/cdn/x/visuels/1/2/4/b/124b0i1gg9zk644pjvrz3z01ud5xrnpib8hiosjzs.jpg",
+                "photoDescriptionTags": null,
+                "lowResolutionUrl": "https://v.seloger.com/s/height/400/visuels/1/2/4/b/124b0i1gg9zk644pjvrz3z01ud5xrnpib8hiosjzs.jpg"
+              },
+              {
+                "id": 1802369921,
+                "isHorizontal": true,
+                "descriptiveFr": null,
+                "defaultUrl": "https://v.seloger.com/s/width/800/visuels/0/f/z/f/0fzfscfmwtfq0g9dzyd6r02rgr7aae1igdfwmhk0w.jpg",
+                "squareUrl": "https://v.seloger.com/s/crop/200x200/visuels/0/f/z/f/0fzfscfmwtfq0g9dzyd6r02rgr7aae1igdfwmhk0w.jpg",
+                "squareLargeUrl": "https://v.seloger.com/s/crop/414x414/visuels/0/f/z/f/0fzfscfmwtfq0g9dzyd6r02rgr7aae1igdfwmhk0w.jpg",
+                "mobileUrl": "https://v.seloger.com/s/width/600/visuels/0/f/z/f/0fzfscfmwtfq0g9dzyd6r02rgr7aae1igdfwmhk0w.jpg",
+                "originalUrl": "https://v.seloger.com/s/cdn/x/visuels/0/f/z/f/0fzfscfmwtfq0g9dzyd6r02rgr7aae1igdfwmhk0w.jpg",
+                "photoDescriptionTags": null,
+                "lowResolutionUrl": "https://v.seloger.com/s/width/400/visuels/0/f/z/f/0fzfscfmwtfq0g9dzyd6r02rgr7aae1igdfwmhk0w.jpg"
+              },
+              {
+                "id": 1802369923,
+                "isHorizontal": false,
+                "descriptiveFr": null,
+                "defaultUrl": "https://v.seloger.com/s/height/800/visuels/1/d/4/v/1d4v8bm2qtgugpz0nb59iq6jifh4nraipsr76tliw.jpg",
+                "squareUrl": "https://v.seloger.com/s/crop/200x200/visuels/1/d/4/v/1d4v8bm2qtgugpz0nb59iq6jifh4nraipsr76tliw.jpg",
+                "squareLargeUrl": "https://v.seloger.com/s/crop/414x414/visuels/1/d/4/v/1d4v8bm2qtgugpz0nb59iq6jifh4nraipsr76tliw.jpg",
+                "mobileUrl": "https://v.seloger.com/s/height/600/visuels/1/d/4/v/1d4v8bm2qtgugpz0nb59iq6jifh4nraipsr76tliw.jpg",
+                "originalUrl": "https://v.seloger.com/s/cdn/x/visuels/1/d/4/v/1d4v8bm2qtgugpz0nb59iq6jifh4nraipsr76tliw.jpg",
+                "photoDescriptionTags": null,
+                "lowResolutionUrl": "https://v.seloger.com/s/height/400/visuels/1/d/4/v/1d4v8bm2qtgugpz0nb59iq6jifh4nraipsr76tliw.jpg"
+              },
+              {
+                "id": 1802369925,
+                "isHorizontal": false,
+                "descriptiveFr": null,
+                "defaultUrl": "https://v.seloger.com/s/height/800/visuels/0/a/5/o/0a5o0dm06p04uqlw7b2o2v97u3bdcphxao73cl83c.jpg",
+                "squareUrl": "https://v.seloger.com/s/crop/200x200/visuels/0/a/5/o/0a5o0dm06p04uqlw7b2o2v97u3bdcphxao73cl83c.jpg",
+                "squareLargeUrl": "https://v.seloger.com/s/crop/414x414/visuels/0/a/5/o/0a5o0dm06p04uqlw7b2o2v97u3bdcphxao73cl83c.jpg",
+                "mobileUrl": "https://v.seloger.com/s/height/600/visuels/0/a/5/o/0a5o0dm06p04uqlw7b2o2v97u3bdcphxao73cl83c.jpg",
+                "originalUrl": "https://v.seloger.com/s/cdn/x/visuels/0/a/5/o/0a5o0dm06p04uqlw7b2o2v97u3bdcphxao73cl83c.jpg",
+                "photoDescriptionTags": null,
+                "lowResolutionUrl": "https://v.seloger.com/s/height/400/visuels/0/a/5/o/0a5o0dm06p04uqlw7b2o2v97u3bdcphxao73cl83c.jpg"
+              },
+              {
+                "id": 1802369927,
+                "isHorizontal": true,
+                "descriptiveFr": null,
+                "defaultUrl": "https://v.seloger.com/s/width/800/visuels/1/f/b/n/1fbntfi1yylk62i5ocg36hdfq6zfzordr4wv7njj4.jpg",
+                "squareUrl": "https://v.seloger.com/s/crop/200x200/visuels/1/f/b/n/1fbntfi1yylk62i5ocg36hdfq6zfzordr4wv7njj4.jpg",
+                "squareLargeUrl": "https://v.seloger.com/s/crop/414x414/visuels/1/f/b/n/1fbntfi1yylk62i5ocg36hdfq6zfzordr4wv7njj4.jpg",
+                "mobileUrl": "https://v.seloger.com/s/width/600/visuels/1/f/b/n/1fbntfi1yylk62i5ocg36hdfq6zfzordr4wv7njj4.jpg",
+                "originalUrl": "https://v.seloger.com/s/cdn/x/visuels/1/f/b/n/1fbntfi1yylk62i5ocg36hdfq6zfzordr4wv7njj4.jpg",
+                "photoDescriptionTags": null,
+                "lowResolutionUrl": "https://v.seloger.com/s/width/400/visuels/1/f/b/n/1fbntfi1yylk62i5ocg36hdfq6zfzordr4wv7njj4.jpg"
+              },
+              {
+                "id": 1802369929,
+                "isHorizontal": true,
+                "descriptiveFr": null,
+                "defaultUrl": "https://v.seloger.com/s/width/800/visuels/1/u/q/5/1uq52jp2y2f7mz7y5kgx7lxmjy356rq6onvgvc2ao.jpg",
+                "squareUrl": "https://v.seloger.com/s/crop/200x200/visuels/1/u/q/5/1uq52jp2y2f7mz7y5kgx7lxmjy356rq6onvgvc2ao.jpg",
+                "squareLargeUrl": "https://v.seloger.com/s/crop/414x414/visuels/1/u/q/5/1uq52jp2y2f7mz7y5kgx7lxmjy356rq6onvgvc2ao.jpg",
+                "mobileUrl": "https://v.seloger.com/s/width/600/visuels/1/u/q/5/1uq52jp2y2f7mz7y5kgx7lxmjy356rq6onvgvc2ao.jpg",
+                "originalUrl": "https://v.seloger.com/s/cdn/x/visuels/1/u/q/5/1uq52jp2y2f7mz7y5kgx7lxmjy356rq6onvgvc2ao.jpg",
+                "photoDescriptionTags": null,
+                "lowResolutionUrl": "https://v.seloger.com/s/width/400/visuels/1/u/q/5/1uq52jp2y2f7mz7y5kgx7lxmjy356rq6onvgvc2ao.jpg"
+              },
+              {
+                "id": 1802369931,
+                "isHorizontal": false,
+                "descriptiveFr": null,
+                "defaultUrl": "https://v.seloger.com/s/height/800/visuels/0/k/w/o/0kwo4eh8lt5oh0ohhlm13hqjags1yolkpnhky4854.jpg",
+                "squareUrl": "https://v.seloger.com/s/crop/200x200/visuels/0/k/w/o/0kwo4eh8lt5oh0ohhlm13hqjags1yolkpnhky4854.jpg",
+                "squareLargeUrl": "https://v.seloger.com/s/crop/414x414/visuels/0/k/w/o/0kwo4eh8lt5oh0ohhlm13hqjags1yolkpnhky4854.jpg",
+                "mobileUrl": "https://v.seloger.com/s/height/600/visuels/0/k/w/o/0kwo4eh8lt5oh0ohhlm13hqjags1yolkpnhky4854.jpg",
+                "originalUrl": "https://v.seloger.com/s/cdn/x/visuels/0/k/w/o/0kwo4eh8lt5oh0ohhlm13hqjags1yolkpnhky4854.jpg",
+                "photoDescriptionTags": null,
+                "lowResolutionUrl": "https://v.seloger.com/s/height/400/visuels/0/k/w/o/0kwo4eh8lt5oh0ohhlm13hqjags1yolkpnhky4854.jpg"
+              }
+            ],
+            "totalPhotoCount": 8,
+            "videoUrl": null,
+            "visit3DUrl": null
+          },
+          "businessUnitType": "SL",
+          "seoLinkBox": {
+            "commodityList": []
+          },
+          "seoTitle": "Vente maison 6 pièces Bellerive-sur-Allier - maison F6/T6/6 pièces 120 m² 300000€",
+          "title": "Vente maison 6 pièces Bellerive-sur-Allier - maison F6/T6/6 pièces 120 m² 300000€",
+          "mainTitle": "Maison à vendre",
+          "featuresPopupTitle": "maison",
+          "shortDescription": "Belle maison début 20e siècle rénovée en 2023 dans un quartier calme, vert et recherché du centre ville de Bellerive sur Allier .\nLa maison est située à proximité de toutes commodités, bus, commerces, piscine, lac d’Allier, écoles et collège. Accès",
+          "featureCategories": {
+            "header": {
+              "title": null,
+              "features": [
+                {
+                  "name": "room",
+                  "title": "6 pièces",
+                  "visibleInMainView": false
+                },
+                {
+                  "name": "bedroom",
+                  "title": "4 chambres",
+                  "visibleInMainView": false
+                },
+                {
+                  "name": "livingspace",
+                  "title": "120 m²",
+                  "visibleInMainView": false
+                },
+                {
+                  "name": "overallspace",
+                  "title": "Terrain 600 m²",
+                  "visibleInMainView": false
+                }
+              ]
+            },
+            "general": null,
+            "outside": {
+              "title": "Extérieur",
+              "features": [
+                {
+                  "name": "terrace",
+                  "title": "Terrasse",
+                  "visibleInMainView": true
+                },
+                {
+                  "name": "garden",
+                  "title": "Jardin",
+                  "visibleInMainView": true
+                },
+                {
+                  "name": "swimmingpool",
+                  "title": "Piscine",
+                  "visibleInMainView": true
+                }
+              ]
+            },
+            "situation": null,
+            "additionalSurface": {
+              "title": "Surfaces annexes",
+              "features": [
+                {
+                  "name": "parkinglot",
+                  "title": "Parking",
+                  "visibleInMainView": true
+                },
+                {
+                  "name": "cellar",
+                  "title": "Cave",
+                  "visibleInMainView": true
+                }
+              ]
+            },
+            "serviceAndAccessibility": null,
+            "kitchen": {
+              "title": "Cuisine",
+              "features": [
+                {
+                  "name": "kitchentype",
+                  "title": "Cuisine américaine",
+                  "visibleInMainView": false
+                }
+              ]
+            },
+            "hygiene": {
+              "title": "Hygiène",
+              "features": [
+                {
+                  "name": "bathroom",
+                  "title": "Salle de bain (baignoire)",
+                  "visibleInMainView": false
+                }
+              ]
+            },
+            "livingSpace": {
+              "title": "Pièces à vivre",
+              "features": [
+                {
+                  "name": "entrance",
+                  "title": "Entrée séparée",
+                  "visibleInMainView": false
+                }
+              ]
+            },
+            "heating": {
+              "title": "Chauffage",
+              "features": [
+                {
+                  "name": "heatingtype",
+                  "title": "Chauffage : non communiqué",
+                  "visibleInMainView": false
+                }
+              ]
+            }
+          },
+          "yearOfConstruction": null,
+          "transport": null
+        },
+        "listingBreadcrumb": {
+          "breadcrumb": [
+            {
+              "label": "Immobilier",
+              "link": "https://www.seloger.com"
+            },
+            {
+              "label": "Annonces",
+              "link": "https://www.seloger.com/immobilier/"
+            },
+            {
+              "label": "Achat entre particuliers maison Auvergne",
+              "link": "https://www.seloger.com/immobilier/achat/particulier/bien-maison/auvergne.htm"
+            },
+            {
+              "label": "Achat entre particuliers maison Allier",
+              "link": "https://www.seloger.com/immobilier/achat/particulier/03/bien-maison/"
+            },
+            {
+              "label": "Achat entre particuliers maison Centre Ville Bas",
+              "link": "https://www.seloger.com/immobilier/achat/immo-bellerive-sur-allier-03/quartier-centre-ville-bas/bien-maison/"
+            },
+            {
+              "label": "Vente Maison / Villa 6 pièces 120 m² Bellerive-sur-Allier - Centre Ville Bas - Rue Charloing 03700 Bellerive Sur Allier",
+              "link": null
+            }
+          ]
+        },
+        "url": {
+          "value": "https://www.seloger.com/annonces/achat/maison/bellerive-sur-allier-03/centre-ville-bas/209163313.htm",
+          "businessUnitType": "SL",
+          "nature": 1
+        },
+        "earlyAccess": null
+      },
+      "agency": {
+        "id": 235420,
+        "idRcu": "RC-999999999",
+        "name": "Bajrav",
+        "professionType": "Agences immobilières",
+        "address": "",
+        "logo": null,
+        "organisationLogo": null,
+        "description": null,
+        "tierId": -1000,
+        "feesUrl": null,
+        "websiteUrl": null,
+        "profilPageUrl": "/professionnels/agences-immobilieres/paris-18eme-arrondissement-75018/agence-71211/",
+        "phoneNumber": "06 70 03 55 88",
+        "contactHidden": false,
+        "rating": {
+          "rating": null,
+          "reviewCount": 0,
+          "reviewUrl": null
+        },
+        "legalNotice": {
+          "socialReason": null,
+          "shareCapital": 0,
+          "professionalCardNumber": null,
+          "professionalCardPrefecture": null,
+          "financialGuaranteeFund": null,
+          "financialGuaranteeAmount": null,
+          "headquarterAddress": null,
+          "rcsSiren": null,
+          "isIndividual": true,
+          "legalForm": null
+        }
+      }
+    }
+  ]

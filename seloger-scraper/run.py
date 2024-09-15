@@ -1,10 +1,3 @@
-"""
-This example run script shows how to run the seloger.com scraper defined in ./seloger.py
-It scrapes ads data and saves it to ./results/
-
-To run this script set the env variable $SCRAPFLY_KEY with your scrapfly API key:
-$ export $SCRAPFLY_KEY="your key from https://scrapfly.io/dashboard"
-"""
 import asyncio
 import json
 from pathlib import Path
@@ -13,27 +6,49 @@ import seloger
 output = Path(__file__).parent / "results"
 output.mkdir(exist_ok=True)
 
+base_url = "https://www.seloger.com"
+
+async def fetch_property_details(url):
+    full_url = f"{base_url}{url}"
+    details = await seloger.scrape_property(url=full_url)
+    return details
 
 async def run():
-    # enable scrapfly cache for basic use
-    seloger.BASE_CONFIG["cache"] = True
+    search_file = output.joinpath("search.json")
+    
+    # Vérifier si le fichier search.json existe et n'est pas vide
+    if not search_file.exists() or search_file.stat().st_size == 0:
+        print("Le fichier search.json est vide ou n'existe pas. Scraping des données...")
+        search_data = await seloger.scrape_search(
+            url="https://www.seloger.com/immobilier/pays/achat/bien-maison/france.htm?projects=2&types=2&places=[{%22countries%22:[250]}]&mandatorycommodities=0&privateseller=1&enterprise=0&qsVersion=1.0&m=search_refine-redirection-search_results",
+            scrape_all_pages=False,
+            max_pages=2,
+        )
+        # Sauvegarder les données récupérées dans search.json
+        with open(search_file, "w", encoding="utf-8") as file:
+            json.dump(search_data, file, indent=2, ensure_ascii=False)
+    else:
+        # Charger les résultats de la recherche depuis le fichier JSON
+        try:
+            with open(search_file, "r", encoding="utf-8") as file:
+                search_data = json.load(file)
+        except json.JSONDecodeError as e:
+            print(f"Erreur lors du chargement du JSON : {e}")
+            return
 
-    print("running Seloger scrape and saving results to ./results directory")
+    # Liste pour contenir tous les détails des propriétés
+    all_property_details = []
 
-    search_data = await seloger.scrape_search(
-        url="https://www.seloger.com/immobilier/achat/immo-bordeaux-33/bien-appartement/",
-        scrape_all_pages=False,
-        max_pages=2,
-    )
-    with open(output.joinpath("search.json"), "w", encoding="utf-8") as file:
-        json.dump(search_data, file, indent=2, ensure_ascii=False)
+    # Boucler sur les deux premières propriétés et récupérer leurs détails
+    for property in search_data[:2]:  # Limite à 2 propriétés
+        classified_url = property.get("classifiedURL")
+        if classified_url:
+            details = await fetch_property_details(classified_url)
+            all_property_details.append(details)
 
-    property_data = await seloger.scrape_property(
-        url="https://www.seloger.com/annonces/achat-de-prestige/appartement/bordeaux-33/saint-bruno-saint-augustin/215096735.htm"
-    )
-    with open(output.joinpath("property.json"), "w", encoding="utf-8") as file:
-        json.dump(property_data, file, indent=2, ensure_ascii=False)
-
+    # Sauvegarder les données détaillées dans un autre fichier JSON
+    with open(output.joinpath("detailed_properties.json"), "w", encoding="utf-8") as file:
+        json.dump(all_property_details, file, indent=2, ensure_ascii=False)
 
 if __name__ == "__main__":
     asyncio.run(run())
