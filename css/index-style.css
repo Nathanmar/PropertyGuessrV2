@@ -1,0 +1,36 @@
+html{
+    height: 97%;
+}
+
+body {
+    font-family: Verdana;
+    font-size: 12px;
+    padding: 10px;
+    height:100%;
+  }
+  
+  #chartdiv {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #chartdiv path {
+  /*   stroke: #fff; */
+  }
+  
+  #chartdiv a {
+    display: none !important;
+  }
+  
+  #controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  #controls input {
+    padding: 5px;
+  }
