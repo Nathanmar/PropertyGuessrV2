@@ -1,70 +1,106 @@
 am5.ready(function() {
-    
-    var root = am5.Root.new("chartdiv");
-    
-    root.setThemes([
-      am5themes_Animated.new(root)
-    ]);
-    
-    var chart = root.container.children.push(am5map.MapChart.new(root, {
-      panX: "translateX",
-      panY: "translateY",
-      projection: am5map.geoMercator()
-    }));
-    
-    var polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
-      geoJSON: am5geodata_worldLow,
-      exclude: ["AQ"]
-    }));
-    
-    // Définir la couleur de tous les pays par défaut
-    polygonSeries.mapPolygons.template.setAll({
-      fill: am5.color(0x333333), // Gris foncé
-      tooltipText: "{name}",
-      toggleKey: "active",
-      interactive: true
-    });
-    
-    // Définir la couleur pour le survol
-    polygonSeries.mapPolygons.template.states.create("hover", {
-      fill: root.interfaceColors.get("primaryButtonHover")
-    });
-    
-    // Définir la couleur pour l'état actif
-    polygonSeries.mapPolygons.template.states.create("active", {
-      fill: root.interfaceColors.get("primaryButtonHover")
-    });
-    
-    // Changer la couleur de la France
-    var francePolygon = polygonSeries.getDataItemById("FR"); // Assurez-vous que l'ID de la France est correct
-    if (francePolygon) {
-        francePolygon.mapPolygons.template.setAll({
-            fill: am5.color(0x0000FF) // Bleu
+
+  var root = am5.Root.new("chartdiv");
+
+  root.setThemes([
+    am5themes_Animated.new(root)
+  ]);
+
+  // Créer la carte avec la projection
+  var chart = root.container.children.push(am5map.MapChart.new(root, {
+    panX: "none", // Désactiver le déplacement horizontal
+    panY: "none", // Désactiver le déplacement vertical
+    projection: am5map.geoMercator()
+  }));
+
+  // Ajouter un fond bleu clair (représentant la mer)
+  var backgroundSeries = chart.series.unshift(am5map.MapPolygonSeries.new(root, {}));
+  
+  backgroundSeries.mapPolygons.template.setAll({
+    fill: am5.color(0xd4efff), // Bleu clair pour la mer
+    stroke: am5.color(0xd4efff) // Bordure du même bleu pour la mer
+  });
+
+  backgroundSeries.data.push({
+    geometry: am5map.getGeoRectangle(90, 180, -60, -180) // Couvrir tout le globe
+  });
+
+  // Créer la série des pays
+  var polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
+    geoJSON: am5geodata_worldLow,
+    exclude: ["AQ"]
+  }));
+
+  // Définir la couleur de tous les pays par défaut (gris foncé)
+  polygonSeries.mapPolygons.template.setAll({
+    fill: am5.color(0x333333), // Gris foncé
+    tooltipText: "{name}", // Texte par défaut du tooltip
+    toggleKey: "active",
+    interactive: true
+  });
+
+  // Définir la couleur pour le survol des autres pays (rouge)
+  polygonSeries.mapPolygons.template.states.create("hover", {
+    fill: am5.color(0x841D1D) // Rouge pour le survol
+  });
+
+  // Modifier la couleur de la France
+  polygonSeries.events.on("datavalidated", function() {
+    polygonSeries.mapPolygons.each(function(polygon) {
+      if (polygon.dataItem.get("id") === "FR") {
+        // Mettre la France en bleu
+        polygon.set("fill", am5.color(0x028a00)); // Bleu pour la France
+
+        // Empêcher la France de changer de couleur au survol
+        polygon.states.create("hover", {
+          fill: am5.color(0x028a00) // Bleu au survol aussi
         });
+      }
+    });
+  });
+
+  // Modifier le tooltip pour afficher un message personnalisé au survol
+  polygonSeries.mapPolygons.template.events.on("pointerover", function(event) {
+    var polygon = event.target;
+    var id = polygon.dataItem.get("id");
+    if (id !== "FR") {
+      // Afficher le message personnalisé pour les autres pays
+      polygon.set("tooltipText", "Pays non disponible pour l'instant");
+    } else {
+      // Afficher le texte par défaut pour la France
+      polygon.set("tooltipText", "{name}");
     }
-    
-    var previousPolygon;
-    
-    polygonSeries.mapPolygons.template.on("active", function (active, target) {
+  });
+
+  polygonSeries.mapPolygons.template.events.on("pointerout", function(event) {
+    var polygon = event.target;
+    // Réinitialiser le texte du tooltip lorsque la souris quitte l'élément
+    polygon.set("tooltipText", "{name}");
+  });
+
+  var previousPolygon;
+
+  // Gestion du zoom uniquement pour la France
+  polygonSeries.mapPolygons.template.events.on("click", function (event) {
+    var target = event.target;
+
+    // Vérifier si c'est la France (ID "FR")
+    if (target.dataItem.get("id") === "FR") {
       if (previousPolygon && previousPolygon != target) {
         previousPolygon.set("active", false);
       }
-      if (target.get("active")) {
-        polygonSeries.zoomToDataItem(target.dataItem );
-      }
-      else {
-        chart.goHome();
-      }
+
+      polygonSeries.zoomToDataItem(target.dataItem);
       previousPolygon = target;
-    });
-    
-    var zoomControl = chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
-    zoomControl.homeButton.set("visible", true);
-    
-    chart.chartContainer.get("background").events.on("click", function () {
-      chart.goHome();
-    })
-    
-    chart.appear(1000, 100);
-    
+    }
+  });
+
+  var zoomControl = chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
+  zoomControl.homeButton.set("visible", true);
+
+  chart.chartContainer.get("background").events.on("click", function () {
+    chart.goHome();
+  });
+
+  chart.appear(1000, 100);
 });
