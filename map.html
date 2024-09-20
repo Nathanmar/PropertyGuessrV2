@@ -12,32 +12,81 @@
         <h1>Propriétés sur la Carte</h1>
     </header>
     <div id="map"></div>
+    <div class="circle-overlay close"></div>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
-        // Initialisation de la carte centrée sur la France 
+        window.onload = function() {
+            var overlay = document.querySelector('.circle-overlay');
+
+            // Ajouter la classe pour démarrer l'animation inverse
+            setTimeout(function() {
+                overlay.classList.add('shrink');
+            }, 10);
+
+            // Supprimer l'overlay après l'animation de fermeture
+            setTimeout(function() {
+                overlay.remove(); // Retire le cercle une fois l'animation terminée
+            }, 1500); // Durée de l'animation de fermeture
+        };
+
         const map = L.map('map', {
-            center: [46.603354, 1.888334], // Coordonnées pour centrer sur la France
-            zoom: 6, // Niveau de zoom initial
-            minZoom: 6, // Zoom minimum pour ne pas pouvoir zoomer trop loin
-            maxZoom: 16 // Zoom maximum pour éviter le zoom avant excessif
+            center: [46.603354, 1.888334], // Centre de la France
+            zoom: 6,
+            minZoom: 6,
+            maxBounds: [
+                [41.3337, -5.5591], // Sud-Ouest (Latitude/Longitude min)
+                [51.1241999, 9.6624999]  // Nord-Est (Latitude/Longitude max)
+            ],
+            maxBoundsViscosity: 1.0 // Empêche la carte de sortir de ces limites
         });
 
-        // Limites de la carte à la France
-        const southWest = L.latLng(41.0, -5.0);  // Coordonnées Sud-Ouest de la France
-        const northEast = L.latLng(51.5, 9.0);   // Coordonnées Nord-Est de la France
-        const bounds = L.latLngBounds(southWest, northEast);
-
-        // Appliquer les limites pour restreindre la vue uniquement à la France
-        map.setMaxBounds(bounds);  // Restreindre la vue
-        map.on('drag', function() {
-            map.panInsideBounds(bounds, { animate: false }); // Empêcher de sortir des limites
-        });
-
-        // Charger les tuiles OpenStreetMap
+        // Charger le fond de carte OpenStreetMap
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 18,
             attribution: '© OpenStreetMap contributors'
         }).addTo(map);
+
+        // Charger le fichier GeoJSON pour la France
+        fetch('json/fr.json') // Chemin vers ton fichier GeoJSON
+            .then(response => response.json())
+            .then(data => {
+                const geoJsonLayer = L.geoJSON(data, {
+                    style: {
+                        color: "#3388ff",
+                        weight: 2,
+                        fillOpacity: 0
+                    }
+                }).addTo(map);
+
+                // Ajuster la vue pour englober les limites de la France
+                map.fitBounds(geoJsonLayer.getBounds());
+
+                // Ajouter un masque autour de la France pour cacher tout sauf la France
+                addMaskOutsideFrance(map, geoJsonLayer);
+            })
+            .catch(error => console.error('Erreur lors du chargement du fichier GeoJSON:', error));
+
+        // Fonction pour ajouter le masque en dehors de la France
+        function addMaskOutsideFrance(map, geoJsonLayer) {
+            // Définir les coordonnées du "monde" (grand polygone qui couvre tout)
+            const worldMask = [
+                [[-90, -180], [90, -180], [90, 180], [-90, 180]]
+            ];
+
+            // Obtenir les coordonnées de la France
+            const franceCoordinates = geoJsonLayer.getLayers().map(layer => {
+                return layer.getLatLngs();
+            });
+
+            // Combiner les deux pour créer un masque
+            const mask = L.polygon([...worldMask, ...franceCoordinates], {
+                color: '#000000',    // Contour du masque
+                fillColor: '#000000', // Couleur de remplissage en dehors de la France
+                fillOpacity: 0.9,    // Opacité du masque (0.8 pour un fond presque opaque)
+                stroke: false        // Pas de contour autour du masque
+            }).addTo(map);
+        }
+
 
         // Fonction pour ajouter les marqueurs à partir des données de la base de données via PHP
         async function addMarkers() {

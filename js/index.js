@@ -49,11 +49,11 @@ am5.ready(function() {
     polygonSeries.mapPolygons.each(function(polygon) {
       if (polygon.dataItem.get("id") === "FR") {
         // Mettre la France en bleu
-        polygon.set("fill", am5.color(0x028a00)); // Bleu pour la France
+        polygon.set("fill", am5.color(0x0052D9)); // Bleu pour la France
 
         // Empêcher la France de changer de couleur au survol
         polygon.states.create("hover", {
-          fill: am5.color(0x028a00) // Bleu au survol aussi
+          fill: am5.color(0x0052D9) // Bleu au survol aussi
         });
       }
     });
@@ -92,8 +92,28 @@ am5.ready(function() {
 
       polygonSeries.zoomToDataItem(target.dataItem);
       previousPolygon = target;
+
+      setTimeout(triggerCircleAnimation, 500);
     }
   });
+
+// Fonction pour déclencher l'animation du cercle
+function triggerCircleAnimation() {
+  var overlay = document.createElement('div');
+  overlay.classList.add('circle-overlay');
+  document.body.appendChild(overlay);
+
+  // Ajouter la classe pour démarrer l'animation
+  setTimeout(function() {
+    overlay.classList.add('expand');
+  }, 10);
+
+  // Rediriger vers la page map.html après 1 seconde après l'animation (total 2.5s ici)
+  setTimeout(function() {
+    window.location.href = "map.html"; // Redirige vers map.html
+  }, 1500); // 1.5s d'animation + 1s d'attente
+}
+
 
   var zoomControl = chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
   zoomControl.homeButton.set("visible", true);
