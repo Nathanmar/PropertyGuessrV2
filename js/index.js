@@ -80,7 +80,7 @@ am5.ready(function() {
 
   var previousPolygon;
 
-  // Gestion du zoom uniquement pour la France
+  // Gestion du clic uniquement pour la France, sans zoom
   polygonSeries.mapPolygons.template.events.on("click", function (event) {
     var target = event.target;
 
@@ -90,30 +90,29 @@ am5.ready(function() {
         previousPolygon.set("active", false);
       }
 
-      polygonSeries.zoomToDataItem(target.dataItem);
       previousPolygon = target;
 
+      // Déclencher l'animation du cercle
       setTimeout(triggerCircleAnimation, 500);
     }
   });
 
-// Fonction pour déclencher l'animation du cercle
-function triggerCircleAnimation() {
-  var overlay = document.createElement('div');
-  overlay.classList.add('circle-overlay');
-  document.body.appendChild(overlay);
+  // Fonction pour déclencher l'animation du cercle
+  function triggerCircleAnimation() {
+    var overlay = document.createElement('div');
+    overlay.classList.add('circle-overlay');
+    document.body.appendChild(overlay);
 
-  // Ajouter la classe pour démarrer l'animation
-  setTimeout(function() {
-    overlay.classList.add('expand');
-  }, 10);
+    // Ajouter la classe pour démarrer l'animation
+    setTimeout(function() {
+      overlay.classList.add('expand');
+    }, 10);
 
-  // Rediriger vers la page map.html après 1 seconde après l'animation (total 2.5s ici)
-  setTimeout(function() {
-    window.location.href = "map.html"; // Redirige vers map.html
-  }, 1500); // 1.5s d'animation + 1s d'attente
-}
-
+    // Rediriger vers la page map.html
+    setTimeout(function() {
+      window.location.href = "map.html"; // Redirige vers map.html
+    }, 1500); // 1.5s d'animation
+  }
 
   var zoomControl = chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
   zoomControl.homeButton.set("visible", true);
